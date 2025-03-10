@@ -4,12 +4,8 @@ const questions = document.querySelectorAll(".question-btn");
 const faqMessage = document.getElementById("faqMessage"); 
 
 const responses = {
-    "Qui es-tu ?": "Je suis un étudiant actuellement en 3ème année de BUT MMI.",
-    "Quelles sont tes compétences ?": "Je maîtrise HTML, CSS, JavaScript, ainsi que certains frameworks comme React et Tailwind CSS. Vous pouvez télécharger mon CV ici: <a href='./content/Cv.pdf' download='./content/Cv.pdf' class='text-red-500 underline'>Télécharger mon CV</a>",
-    "Pourquoi ce personnage ?": `C'est assez simple, ce personnage me représente et que j'apprécie beaucoup. Ce dessin a été créé par une amie que vous pouvez retrouver ici: <a href='https://x.com/kyuukyuuchu' target='_blank' class='text-red-500 underline'>son Twitter</a>.`,
-    "Qu'est-ce qui t'inspires ?": "Je m'inspire des jeux vidéo, mangas et animés que j'apprécie, d'où le dialogue lorsque vous arrivez sur ce site.",
-    "Quels outils utilises-tu pour ton travail ?": "Pour développer j'utilise Visual Studio Code et pour l'hébergement local j'utilise Xampp.",
-    "Quels sont tes hobbies ?": "J'apprécie jouer aux jeux vidéo, écouter de la musique, lire des mangas et manwha, regarder des vidéos et des streams, mais aussi, passer du temps en appel vocal avec des amis."
+    "Je veux en savoir plus sur toi.": `Je suis un étudiant actuellement en 3ème année de BUT MMI. <br> <br> J'utilise le personnage que vous voyez à l'arrivé sur mon site pour me représenter. Ce dessin a été créé par une amie que vous pouvez retrouver ici: <a href='https://x.com/kyuukyuuchu' target='_blank' class='text-red-500 underline'>son Twitter</a>. <br> <br> J'ai quelques hobbies. J'apprécie jouer aux jeux vidéo, écouter de la musique, lire des mangas et manwha, regarder des vidéos et des streams, mais aussi, passer du temps en appel vocal avec des amis.`,
+    "Je veux en savoir plus sur toi dans l'aspect professionnel.": `Pour mes compétences: Je maîtrise HTML, CSS, JavaScript, ainsi que certains frameworks comme React et Tailwind CSS. Vous pouvez télécharger mon CV ici: <a href='./content/Cv.pdf' download='./content/Cv.pdf' class='text-red-500 underline'>Télécharger mon CV</a> <br> <br> Pour mes sites, je m'inspire des jeux vidéo, mangas et animés que j'apprécie, d'où le dialogue lorsque vous arrivez sur ce site et le système de FAQ. <br> <br> Lorsque je développe, j'utilise Visual Studio Code et pour l'hébergement local j'utilise Xampp.` 
 };
 
 let currentAnswerBox = null; 
@@ -57,6 +53,6 @@ questions.forEach(button => {
         setTimeout(() => {
             questions.forEach(q => q.style.display = "block");
             answerBox.style.opacity = "1";
-        }, 6000);
+        }, 20000);
     });
 });
